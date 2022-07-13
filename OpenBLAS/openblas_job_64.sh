@@ -14,7 +14,6 @@ module reset
 NTHREADS=64 # 64 == single socket
 export JULIA_NUM_THREADS=$NTHREADS
 export OMP_NUM_THREADS=$NTHREADS
-export MKL_DYNAMIC=false
 export OMP_PLACES=CORES
 export OMP_PROC_BIND=CLOSE
 
