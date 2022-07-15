@@ -1,3 +1,6 @@
+[Paderborn Center for Parallel Computing (PC2)](https://pc2.uni-paderborn.de/)    
+[National High-Performance Computing Alliance (NHR)](https://www.nhr-verein.de/)
+
 ## Noctua 2
 
 **System:** [Noctua 2](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) (single and dual-socket AMD EPYC Milan 7763 64-Core CPUs)
