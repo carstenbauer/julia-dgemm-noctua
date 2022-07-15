@@ -15,8 +15,8 @@
 | BLIS 0.9.0          | 64 cores  | 10240 | 2014 |
 | Octavian 0.3.15     | 128 cores | 10240 | **1843** |
 | Octavian 0.3.15     | 64 cores  | 10240 | 1802 |
-| OpenBLAS 0.3.13     | 128 cores | 10240 | **2287** |
-| OpenBLAS 0.3.13     | 64 cores  | 10240 | 2239 |
+| OpenBLAS 0.3.17 (shipped)     | 128 cores | 10240 | **2287** |
+| OpenBLAS 0.3.17 (shipped)     | 64 cores  | 10240 | 2239 |
 
 **Bold:** Needs fixing on either my or the package side?
 
@@ -34,8 +34,8 @@
 | BLIS 0.9.0          | 20 cores  | 10240 | 994 |
 | Octavian 0.3.15     | 40 cores | 10240 | **1053** |
 | Octavian 0.3.15     | 20 cores  | 10240 | 1016 |
-| OpenBLAS 0.3.13     | 40 cores | 10240 | **1032** |
-| OpenBLAS 0.3.13     | 20 cores  | 10240 | 1176 |
+| OpenBLAS 0.3.17 (shipped)    | 40 cores | 10240 | **1032** |
+| OpenBLAS 0.3.17 (shipped)     | 20 cores  | 10240 | 1176 |
 
 **Bold:** Needs fixing on either my or the package side?
 
