@@ -1,3 +1,5 @@
+## Noctua 2
+
 **System:** [Noctua 2](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) (single and dual-socket AMD EPYC Milan 7763 64-Core CPUs)
 * 64 cores -> single-socket
 * 128 cores -> dual-socket (full node)
@@ -12,6 +14,25 @@
 | Octavian 0.3.15     | 64 cores  | 10240 | 1802 |
 | OpenBLAS 0.3.13     | 128 cores | 10240 | **2287** |
 | OpenBLAS 0.3.13     | 64 cores  | 10240 | 2239 |
+
+**Bold:** Needs fixing on either my or the package side?
+
+## Noctua 1
+
+**System:** [Noctua 1](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) (single and dual-socket Intel Xeon Gold "Skylake" 6148 20-Core CPUs)
+* 20 cores -> single-socket
+* 40 cores -> dual-socket (full node)
+
+| BLAS | # cores | size | GFLOPS |
+|---------------------|-----------|-------|------|
+| Intel MKL v2022.0.0 | 40 cores | 10240 | 2096 |
+| Intel MKL v2022.0.0 | 20 cores  | 10240 | 1073 |
+| BLIS 0.9.0          | 40 cores | 10240 | 1819 |
+| BLIS 0.9.0          | 20 cores  | 10240 | 994 |
+| Octavian 0.3.15     | 40 cores | 10240 | **1053** |
+| Octavian 0.3.15     | 20 cores  | 10240 | 1016 |
+| OpenBLAS 0.3.13     | 40 cores | 10240 | **1032** |
+| OpenBLAS 0.3.13     | 20 cores  | 10240 | 1176 |
 
 **Bold:** Needs fixing on either my or the package side?
 

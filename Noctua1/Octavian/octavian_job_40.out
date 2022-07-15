@@ -1,0 +1,32 @@
+cpu-bind=MASK - gpu-0002, task  0  0 [2248994]: mask |BBBBBBBBBBBBBBBBBBBB||||BBBBBBBBBBBBBBBBBBBB|  set
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+
+No initialization of A,B, or C.
+N=10240, Δt=1.94966344, perf=1101.463772639651
+N=10240, Δt=1.847198353, perf=1162.562561033206
+N=10240, Δt=1.749477382, perf=1227.5000923675846
+	Best performance: 1227.5000923675846 GFLOPS
+
+Linear parallel initialization
+N=10240, Δt=2.110246401, perf=1017.6459237093612
+N=10240, Δt=2.065094357, perf=1039.8961387506226
+N=10240, Δt=2.071495553, perf=1036.6827217610735
+	Best performance: 1039.8961387506226 GFLOPS
+
+Row-wise parallel initialization
+N=10240, Δt=2.085932367, perf=1029.5078028289688
+N=10240, Δt=2.046014286, perf=1049.593672289735
+N=10240, Δt=2.038384211, perf=1053.5225088632715
+	Best performance: 1053.5225088632715 GFLOPS
+
+Naive initialization of A and B. No initialization of C.
+N=10240, Δt=2.106456116, perf=1019.4770409354211
+N=10240, Δt=2.05647278, perf=1044.2558096976124
+N=10240, Δt=2.057995281, perf=1043.4832712330208
+	Best performance: 1044.2558096976124 GFLOPS
+
+Naive initialization (i.e. serial)
+N=10240, Δt=2.092726015, perf=1026.1656961339013
+N=10240, Δt=2.041402797, perf=1051.9646838712547
+N=10240, Δt=2.040837009, perf=1052.2563235229925
+	Best performance: 1052.2563235229925 GFLOPS
