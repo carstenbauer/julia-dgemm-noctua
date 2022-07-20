@@ -1,0 +1,34 @@
+cpu-bind=MASK - cn-0013, task  0  0 [1473482]: mask |BBBBBBBBBBBBBBBBBBBB||||BBBBBBBBBBBBBBBBBBBB|  set
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+BLAS.get_num_threads() = 20
+BLAS.get_num_threads() = 20
+
+No initialization of A,B, or C.
+N=10240, Δt=1.882553927, perf=1140.7288881345285
+N=10240, Δt=1.971996909, perf=1088.9893580456926
+N=10240, Δt=2.065968868, perf=1039.4559575715737
+	Best performance: 1140.7288881345285 GFLOPS
+
+Linear parallel initialization
+N=10240, Δt=1.876452196, perf=1144.4382396619285
+N=10240, Δt=1.90590833, perf=1126.750754061713
+N=10240, Δt=1.816362253, perf=1182.299205157508
+	Best performance: 1182.299205157508 GFLOPS
+
+Row-wise parallel initialization
+N=10240, Δt=1.832831506, perf=1171.6754327770707
+N=10240, Δt=1.865659739, perf=1151.0585789620238
+N=10240, Δt=1.83038851, perf=1173.239252905931
+	Best performance: 1173.239252905931 GFLOPS
+
+Naive initialization of A and B. No initialization of C.
+N=10240, Δt=1.866022561, perf=1150.834771713138
+N=10240, Δt=1.867449604, perf=1149.955341980945
+N=10240, Δt=2.12222119, perf=1011.9037818107925
+	Best performance: 1150.834771713138 GFLOPS
+
+Naive initialization (i.e. serial)
+N=10240, Δt=2.272077428, perf=945.1630571808138
+N=10240, Δt=2.286239559, perf=939.3082363334261
+N=10240, Δt=2.357050846, perf=911.0892332443134
+	Best performance: 945.1630571808138 GFLOPS
