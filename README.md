@@ -36,6 +36,8 @@
 | Octavian 0.3.15     | 20 cores  | 10240 | 1016 |
 | OpenBLAS 0.3.17 (shipped)    | 40 cores | 10240 | **1032** |
 | OpenBLAS 0.3.17 (shipped)     | 20 cores  | 10240 | 1176 |
+| OpenBLAS 0.3.20 (custom)    | 40 cores | 10240 | 1906 |
+| OpenBLAS 0.3.20 (custom)     | 20 cores  | 10240 | 1371 |
 
 **Bold:** Needs fixing on either my or the package side?
 
