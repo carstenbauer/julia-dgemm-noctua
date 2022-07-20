@@ -3,7 +3,7 @@
 
 ## Noctua 2
 
-**System:** [Noctua 2](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) (single and dual-socket AMD EPYC Milan 7763 64-Core CPUs)
+**System:** [Noctua 2](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) (single and dual-socket **AMD** EPYC Milan 7763 64-Core CPUs)
 * 64 cores -> single-socket
 * 128 cores -> dual-socket (full node)
 
@@ -22,7 +22,7 @@
 
 ## Noctua 1
 
-**System:** [Noctua 1](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) (single and dual-socket Intel Xeon Gold "Skylake" 6148 20-Core CPUs)
+**System:** [Noctua 1](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) (single and dual-socket **Intel** Xeon Gold "Skylake" 6148 20-Core CPUs)
 * 20 cores -> single-socket
 * 40 cores -> dual-socket (full node)
 
