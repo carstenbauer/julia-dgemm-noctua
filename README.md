@@ -32,8 +32,8 @@
 | Intel MKL v2022.0.0 | 20 cores  | 10240 | 1054 |
 | BLIS 0.9.0          | 40 cores | 10240 | 1890 |
 | BLIS 0.9.0          | 20 cores  | 10240 | 990 |
-| Octavian 0.3.15     | 40 cores | 10240 | **1053** |
-| Octavian 0.3.15     | 20 cores  | 10240 | 1016 |
+| Octavian 0.3.15     | 40 cores | 10240 | **1035** |
+| Octavian 0.3.15     | 20 cores  | 10240 | 1028 |
 | OpenBLAS 0.3.17 (shipped with Julia 1.8)    | 40 cores | 10240 | **1092** |
 | OpenBLAS 0.3.17 (shipped with Julia 1.8)     | 20 cores  | 10240 | 1063 |
 |---------------------|-----------|-------|------|
