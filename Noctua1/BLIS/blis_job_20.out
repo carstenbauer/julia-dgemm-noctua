@@ -1,43 +1,67 @@
-cpu-bind=MASK - gpu-0005, task  0  0 [2013521]: mask |BBBBBBBBBBBBBBBBBBBB||||BBBBBBBBBBBBBBBBBBBB|  set
+cpu-bind=MASK - gpu-0005, task  0  0 [2021876]: mask |BBBBBBBBBBBBBBBBBBBB||||BBBBBBBBBBBBBBBBBBBB|  set
 Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
-ERROR: LoadError: ArgumentError: Package blis_jll [6136c539-28a5-5bf0-87cc-b183200dce32] is required but does not seem to be installed:
- - Run `Pkg.instantiate()` to install all recorded dependencies.
 
-Stacktrace:
- [1] _require(pkg::Base.PkgId)
-   @ Base ./loading.jl:1172
- [2] _require_prelocked(uuidkey::Base.PkgId)
-   @ Base ./loading.jl:1091
- [3] macro expansion
-   @ ./loading.jl:1071 [inlined]
- [4] macro expansion
-   @ ./lock.jl:223 [inlined]
- [5] require(into::Module, mod::Symbol)
-   @ Base ./loading.jl:1035
- [6] include
-   @ ./Base.jl:422 [inlined]
- [7] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt64}}, source::String)
-   @ Base ./loading.jl:1407
- [8] top-level scope
-   @ stdin:1
-in expression starting at /scratch/pc2-mitarbeiter/bauerc/.julia/packages/BLISBLAS/SuvYq/src/BLISBLAS.jl:1
-in expression starting at stdin:1
-ERROR: LoadError: Failed to precompile BLISBLAS [6f275bd8-fec0-4d39-945b-7e95a765fa1e] to /scratch/pc2-mitarbeiter/bauerc/.julia/compiled/v1.8/BLISBLAS/jl_6bu8Nf.
-Stacktrace:
- [1] error(s::String)
-   @ Base ./error.jl:35
- [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, ignore_loaded_modules::Bool)
-   @ Base ./loading.jl:1558
- [3] compilecache
-   @ ./loading.jl:1502 [inlined]
- [4] _require(pkg::Base.PkgId)
-   @ Base ./loading.jl:1203
- [5] _require_prelocked(uuidkey::Base.PkgId)
-   @ Base ./loading.jl:1091
- [6] macro expansion
-   @ ./loading.jl:1071 [inlined]
- [7] macro expansion
-   @ ./lock.jl:223 [inlined]
- [8] require(into::Module, mod::Symbol)
-   @ Base ./loading.jl:1035
-in expression starting at /upb/departments/pc2/users/b/bauerc/julia-dgemm-noctua/Noctua1/BLIS/dgemm_blis.jl:3
+No initialization of A,B, or C.
+N=10240, Δt=1.894114054, perf=1133.7668095883312
+N=10240, Δt=1.893540788, perf=1134.110055410119
+N=10240, Δt=1.899976247, perf=1130.2686817221038
+N=10240, Δt=1.898386337, perf=1131.2152885558826
+N=10240, Δt=1.902992656, perf=1128.4771074807554
+N=10240, Δt=1.89609122, perf=1132.584564154039
+N=10240, Δt=1.899648143, perf=1130.4638998086289
+N=10240, Δt=1.897953263, perf=1131.4734086789786
+N=10240, Δt=1.897780733, perf=1131.5762725682598
+N=10240, Δt=1.897012036, perf=1132.0348038108073
+	Best performance: 1134.110055410119 GFLOPS
+
+Linear parallel initialization
+N=10240, Δt=2.180954504, perf=984.6531159001198
+N=10240, Δt=2.181696245, perf=984.3183499635167
+N=10240, Δt=2.181636601, perf=984.345260349801
+N=10240, Δt=2.181116868, perf=984.579817572618
+N=10240, Δt=2.176204583, perf=986.8022817227934
+N=10240, Δt=2.178748639, perf=985.650023852981
+N=10240, Δt=2.176584364, perf=986.630099672994
+N=10240, Δt=2.176661137, perf=986.5953002495309
+N=10240, Δt=2.17422274, perf=987.7017696908092
+N=10240, Δt=2.174842991, perf=987.420083604555
+	Best performance: 987.7017696908092 GFLOPS
+
+Row-wise parallel initialization
+N=10240, Δt=2.177103965, perf=986.3946244753636
+N=10240, Δt=2.174499876, perf=987.57588892132
+N=10240, Δt=2.183205648, perf=983.637821735793
+N=10240, Δt=2.174609454, perf=987.5261252313124
+N=10240, Δt=2.176397165, perf=986.7149629373829
+N=10240, Δt=2.175176968, perf=987.2684749758715
+N=10240, Δt=2.180375705, perf=984.9145003200264
+N=10240, Δt=2.177058831, perf=986.4150740536419
+N=10240, Δt=2.174669627, perf=987.4988004327334
+N=10240, Δt=2.172859935, perf=988.3212504445208
+	Best performance: 988.3212504445208 GFLOPS
+
+Naive initialization of A and B. No initialization of C.
+N=10240, Δt=2.171551305, perf=988.9168370350799
+N=10240, Δt=2.171433008, perf=988.9707120082611
+N=10240, Δt=2.171535743, perf=988.9239239660076
+N=10240, Δt=2.171322437, perf=989.0210737043105
+N=10240, Δt=2.173527884, perf=988.0175284652572
+N=10240, Δt=2.172244771, perf=988.6011358707974
+N=10240, Δt=2.171834231, perf=988.7880103129289
+N=10240, Δt=2.175581496, perf=987.08490210472
+N=10240, Δt=2.168898486, perf=990.1263991200003
+N=10240, Δt=2.168846311, perf=990.1502181636145
+	Best performance: 990.1502181636145 GFLOPS
+
+Naive initialization (i.e. serial)
+N=10240, Δt=2.172283233, perf=988.5836319024795
+N=10240, Δt=2.170972329, perf=989.180570988291
+N=10240, Δt=2.171868349, perf=988.7724773873945
+N=10240, Δt=2.193879572, perf=978.8521099370536
+N=10240, Δt=2.175124579, perf=987.2922538474982
+N=10240, Δt=2.171541629, perf=988.9212434711286
+N=10240, Δt=2.176892421, perf=986.4904794025191
+N=10240, Δt=2.172812052, perf=988.3430304168804
+N=10240, Δt=2.172604703, perf=988.437355877343
+N=10240, Δt=2.176070668, perf=986.8630093588487
+	Best performance: 989.180570988291 GFLOPS
