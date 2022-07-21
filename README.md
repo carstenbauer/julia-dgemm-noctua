@@ -15,8 +15,8 @@
 | BLIS 0.9.0 (JLL)          | 64 cores  | 10240 | 2033 |
 | Octavian 0.3.15     | 128 cores | 10240 | **1854** |
 | Octavian 0.3.15     | 64 cores  | 10240 | 1869 |
-| OpenBLAS (shipped with Julia 1.8)    | 128 cores | 10240 | **2305** |
-| OpenBLAS (shipped with Julia 1.8)     | 64 cores  | 10240 | 2284 |
+| OpenBLAS 0.3.20 (shipped with Julia 1.8)    | 128 cores | 10240 | **2305** |
+| OpenBLAS 0.3.20 (shipped with Julia 1.8)     | 64 cores  | 10240 | 2284 |
 
 **Bold:** Needs fixing on either my or the package side?
 
@@ -34,8 +34,8 @@
 | BLIS 0.9.0 (JLL)          | 20 cores  | 10240 | 990 |
 | Octavian 0.3.15     | 40 cores | 10240 | **1053** |
 | Octavian 0.3.15     | 20 cores  | 10240 | 1016 |
-| OpenBLAS (shipped with Julia 1.8)    | 40 cores | 10240 | **1092** |
-| OpenBLAS (shipped with Julia 1.8)     | 20 cores  | 10240 | 1063 |
+| OpenBLAS 0.3.20 (shipped with Julia 1.8)    | 40 cores | 10240 | **1092** |
+| OpenBLAS 0.3.20 (shipped with Julia 1.8)     | 20 cores  | 10240 | 1063 |
 |---------------------|-----------|-------|------|
 | OpenBLAS 0.3.17 (custom)    | 40 cores | 10240 | 1908 |
 | OpenBLAS 0.3.17 (custom)     | 20 cores  | 10240 | 1439 |
