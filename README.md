@@ -28,18 +28,24 @@
 
 | BLAS | # cores | size | GFLOPS |
 |---------------------|-----------|-------|------|
-| Intel MKL v2022.0.0 | 40 cores | 10240 | 2096 |
-| Intel MKL v2022.0.0 | 20 cores  | 10240 | 1073 |
-| BLIS 0.9.0          | 40 cores | 10240 | 1819 |
-| BLIS 0.9.0          | 20 cores  | 10240 | 994 |
+| Intel MKL v2022.0.0 | 40 cores | 10240 | 2081 |
+| Intel MKL v2022.0.0 | 20 cores  | 10240 | 1054 |
+| BLIS 0.9.0          | 40 cores | 10240 | 1890 |
+| BLIS 0.9.0          | 20 cores  | 10240 | 990 |
 | Octavian 0.3.15     | 40 cores | 10240 | **1053** |
 | Octavian 0.3.15     | 20 cores  | 10240 | 1016 |
-| OpenBLAS 0.3.17 (shipped)    | 40 cores | 10240 | **1032** |
-| OpenBLAS 0.3.17 (shipped)     | 20 cores  | 10240 | 1176 |
-| OpenBLAS 0.3.20 (custom)    | 40 cores | 10240 | 1902 |
-| OpenBLAS 0.3.20 (custom)     | 20 cores  | 10240 | 1420 |
-| OpenBLAS 0.3.20 (custom, dynamic arch)    | 40 cores | 10240 | 1598 |
-| OpenBLAS 0.3.20 (custom, dynamic arch)     | 20 cores  | 10240 | 1059 |
+| OpenBLAS 0.3.17 (shipped)    | 40 cores | 10240 | **1092** |
+| OpenBLAS 0.3.17 (shipped)     | 20 cores  | 10240 | 1063 |
+|---------------------|-----------|-------|------|
+| OpenBLAS 0.3.17 (custom)    | 40 cores | 10240 | 1908 |
+| OpenBLAS 0.3.17 (custom)     | 20 cores  | 10240 | 1439 |
+| OpenBLAS 0.3.20 (custom)    | 40 cores | 10240 | 1897 |
+| OpenBLAS 0.3.20 (custom)     | 20 cores  | 10240 | 1444 |
+|---------------------|-----------|-------|------|
+| OpenBLAS 0.3.17 (JLL)    | 40 cores | 10240 | 1437 |
+| OpenBLAS 0.3.17 (JLL)     | 20 cores  | 10240 | 1124 |
+| OpenBLAS 0.3.20 (JLL)    | 40 cores | 10240 | 1535 |
+| OpenBLAS 0.3.20 (JLL)     | 20 cores  | 10240 | 1185 |
 
 **Bold:** Needs fixing on either my or the package side?
 
