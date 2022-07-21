@@ -5,7 +5,8 @@
 #SBATCH -A pc2-mitarbeiter
 #SBATCH -o octavian_job_40.out
 #SBATCH -J octavian_job_40
-#SBATCH -p all
+#SBATCH -p gpu
+#SBATCH --reservation=bauerc_269
 #SBATCH -t 30:00
 #SBATCH --exclusive
 
