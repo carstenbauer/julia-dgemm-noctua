@@ -5,7 +5,8 @@
 #SBATCH -A pc2-mitarbeiter
 #SBATCH -o blis_job_64.out
 #SBATCH -J blis_job_64
-#SBATCH -p all
+#SBATCH -p normal
+#SBATCH --reservation=bauerc_dgemm
 #SBATCH -t 30:00
 #SBATCH --exclusive
 

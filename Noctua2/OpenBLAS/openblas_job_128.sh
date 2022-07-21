@@ -5,7 +5,8 @@
 #SBATCH -A pc2-mitarbeiter
 #SBATCH -o openblas_job_128.out
 #SBATCH -J openblas_job_128
-#SBATCH -p all
+#SBATCH -p normal
+#SBATCH --reservation=bauerc_dgemm
 #SBATCH -t 30:00
 #SBATCH --exclusive
 

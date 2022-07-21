@@ -5,7 +5,8 @@
 #SBATCH -A pc2-mitarbeiter
 #SBATCH -o octavian_job_128.out
 #SBATCH -J octavian_job_128
-#SBATCH -p all
+#SBATCH -p normal
+#SBATCH --reservation=bauerc_dgemm
 #SBATCH -t 30:00
 #SBATCH --exclusive
 
