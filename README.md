@@ -28,14 +28,14 @@
 
 | BLAS | # cores | size | GFLOPS |
 |---------------------|-----------|-------|------|
-| Intel MKL v2022.0.0 | 40 cores | 10240 | 2081 |
-| Intel MKL v2022.0.0 | 20 cores  | 10240 | 1054 |
-| BLIS 0.9.0          | 40 cores | 10240 | 1890 |
-| BLIS 0.9.0          | 20 cores  | 10240 | 990 |
-| Octavian 0.3.15     | 40 cores | 10240 | **1035** |
-| Octavian 0.3.15     | 20 cores  | 10240 | 1028 |
-| OpenBLAS 0.3.17 (shipped with Julia 1.8)    | 40 cores | 10240 | **1092** |
-| OpenBLAS 0.3.17 (shipped with Julia 1.8)     | 20 cores  | 10240 | 1063 |
+| Intel MKL v2022.0.0 (JLL) | 40 cores | 10240 | 2081 |
+| Intel MKL v2022.0.0 (JLL) | 20 cores  | 10240 | 1054 |
+| BLIS 0.9.0 (JLL)          | 40 cores | 10240 | 1890 |
+| BLIS 0.9.0 (JLL)          | 20 cores  | 10240 | 990 |
+| Octavian 0.3.15     | 40 cores | 10240 | **1053** |
+| Octavian 0.3.15     | 20 cores  | 10240 | 1016 |
+| OpenBLAS (shipped with Julia 1.8)    | 40 cores | 10240 | **1092** |
+| OpenBLAS (shipped with Julia 1.8)     | 20 cores  | 10240 | 1063 |
 |---------------------|-----------|-------|------|
 | OpenBLAS 0.3.17 (custom)    | 40 cores | 10240 | 1908 |
 | OpenBLAS 0.3.17 (custom)     | 20 cores  | 10240 | 1439 |
