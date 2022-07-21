@@ -42,7 +42,7 @@ function bench_dgemm!(C, A, B)
     N = size(A, 1)
     mul!(C, A, B) # warmup
     Δt_min = Inf
-    for i in 1:3
+    for i in 1:10
         Δt = @elapsed mul!(C, A, B)
         perf = 2.0 * N^3 / Δt * 1e-9
         println("N=$N, Δt=$Δt, perf=$perf")

@@ -5,7 +5,8 @@
 #SBATCH -A pc2-mitarbeiter
 #SBATCH -o openblas_job_20.out
 #SBATCH -J openblas_job_20
-#SBATCH -p all
+#SBATCH -p gpu
+#SBATCH --reservation=bauerc_269
 #SBATCH -t 30:00
 #SBATCH --exclusive
 

@@ -1,32 +1,43 @@
-cpu-bind=MASK - gpu-0001, task  0  0 [106706]: mask |BBBBBBBBBBBBBBBBBBBB||||BBBBBBBBBBBBBBBBBBBB|  set
+cpu-bind=MASK - gpu-0005, task  0  0 [2013929]: mask |BBBBBBBBBBBBBBBBBBBB||||BBBBBBBBBBBBBBBBBBBB|  set
 Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+ERROR: LoadError: ArgumentError: Package blis_jll [6136c539-28a5-5bf0-87cc-b183200dce32] is required but does not seem to be installed:
+ - Run `Pkg.instantiate()` to install all recorded dependencies.
 
-No initialization of A,B, or C.
-N=10240, Δt=0.947233359, perf=2267.111506996662
-N=10240, Δt=0.972528226, perf=2208.1453171108274
-N=10240, Δt=0.979161516, perf=2193.186326166847
-	Best performance: 2267.111506996662 GFLOPS
-
-Linear parallel initialization
-N=10240, Δt=1.191095558, perf=1802.9482467434404
-N=10240, Δt=1.19376267, perf=1798.920088529825
-N=10240, Δt=1.187252532, perf=1808.784222495977
-	Best performance: 1808.784222495977 GFLOPS
-
-Row-wise parallel initialization
-N=10240, Δt=1.180060254, perf=1819.8084722545022
-N=10240, Δt=1.183156263, perf=1815.0465117387457
-N=10240, Δt=1.195684589, perf=1796.028541102155
-	Best performance: 1819.8084722545022 GFLOPS
-
-Naive initialization of A and B. No initialization of C.
-N=10240, Δt=1.19072531, perf=1803.508861334274
-N=10240, Δt=1.187428592, perf=1808.5160341161802
-N=10240, Δt=1.187367242, perf=1808.6094782123018
-	Best performance: 1808.6094782123018 GFLOPS
-
-Naive initialization (i.e. serial)
-N=10240, Δt=1.538447072, perf=1395.877496915279
-N=10240, Δt=1.541686731, perf=1392.9442375151377
-N=10240, Δt=1.554234624, perf=1381.6984995953867
-	Best performance: 1395.877496915279 GFLOPS
+Stacktrace:
+ [1] _require(pkg::Base.PkgId)
+   @ Base ./loading.jl:1172
+ [2] _require_prelocked(uuidkey::Base.PkgId)
+   @ Base ./loading.jl:1091
+ [3] macro expansion
+   @ ./loading.jl:1071 [inlined]
+ [4] macro expansion
+   @ ./lock.jl:223 [inlined]
+ [5] require(into::Module, mod::Symbol)
+   @ Base ./loading.jl:1035
+ [6] include
+   @ ./Base.jl:422 [inlined]
+ [7] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt64}}, source::String)
+   @ Base ./loading.jl:1407
+ [8] top-level scope
+   @ stdin:1
+in expression starting at /scratch/pc2-mitarbeiter/bauerc/.julia/packages/BLISBLAS/SuvYq/src/BLISBLAS.jl:1
+in expression starting at stdin:1
+ERROR: LoadError: Failed to precompile BLISBLAS [6f275bd8-fec0-4d39-945b-7e95a765fa1e] to /scratch/pc2-mitarbeiter/bauerc/.julia/compiled/v1.8/BLISBLAS/jl_ps9z0d.
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:35
+ [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, ignore_loaded_modules::Bool)
+   @ Base ./loading.jl:1558
+ [3] compilecache
+   @ ./loading.jl:1502 [inlined]
+ [4] _require(pkg::Base.PkgId)
+   @ Base ./loading.jl:1203
+ [5] _require_prelocked(uuidkey::Base.PkgId)
+   @ Base ./loading.jl:1091
+ [6] macro expansion
+   @ ./loading.jl:1071 [inlined]
+ [7] macro expansion
+   @ ./lock.jl:223 [inlined]
+ [8] require(into::Module, mod::Symbol)
+   @ Base ./loading.jl:1035
+in expression starting at /upb/departments/pc2/users/b/bauerc/julia-dgemm-noctua/Noctua1/BLIS/dgemm_blis.jl:3
